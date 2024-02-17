@@ -1,0 +1,9 @@
+def defang_ip (ip_address):
+    defanged_ip =ip_address.replace('.','[.]')
+    return defanged_ip
+address = input("Enter IP Address:")
+defanged_ip_address = defang_ip(address)
+print(f"Original IP Address:{address} ")
+print(f"Defanged IP Address: {defanged_ip_address}")
+
+
